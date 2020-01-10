@@ -12,6 +12,8 @@ namespace DepartmentEmployeeMVC.Models
         public int Id { get; set; }
 
         [Display(Name = "First Name")]
+        [Required]
+        [MaxLength(15, ErrorMessage = "First Name must be less than 16 characters")]
 
         public string FirstName { get; set; }
 
